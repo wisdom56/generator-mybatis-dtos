@@ -35,7 +35,7 @@
         </commentGenerator>
 
         <!-- 数据库链接地址账号密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://<%= DBHost %>:<%= DBPort %>/<%= DBName %>?useSSL=false&amp;" userId="<%= DBUserName %>" password="<%= DBPassword %>">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://<%= DBHost %>:<%= DBPort %>/<%= DBName %>?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC" userId="<%= DBUserName %>" password="<%= DBPassword %>">
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
         <javaTypeResolver>
